@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('checkout from GIT'){
             steps{
-               git branch: 'main', url: 'https://github.com/nivas-22/terra-aws.git'
+               git branch: 'master', url: 'https://github.com/nivas-22/terra-aws.git'
             }
         }
         stage('Terraform Init'){
